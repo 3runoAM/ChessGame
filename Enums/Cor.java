@@ -1,4 +1,4 @@
-package Xadrez;
+package Enums;
 
 public enum Cor {
     PRETO("Preto"),

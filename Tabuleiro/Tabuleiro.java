@@ -33,14 +33,19 @@ public class Tabuleiro {
     }
 
     /*Métodos*/
-    public Peca peca(int coluna, int linha){
+    public Peca peca(int linha, int coluna){
         return pecas[linha][coluna];
     }
     public Peca peca(Posicao posicao){
         return pecas[posicao.getLinha()][posicao.getColuna()];
     }
-/*
-    public void colocarPeca(Peca peca, Posicao posicao){}
+    public void colocarPeca(Peca peca, Posicao posicao){
+        pecas[posicao.getLinha()][posicao.getColuna()] = peca;
+        peca.posicao = posicao;
+    }
+
+    /*
     public boolean posicaoExistente(){}
-    public boolean haUmaPeca(){}*/
+    public boolean haUmaPeca(){}
+    */
 }
